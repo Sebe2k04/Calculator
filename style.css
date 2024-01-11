@@ -1,0 +1,71 @@
+@font-face{
+    font-family: sci-fi;
+    src: url(assets/font.otf);
+}
+@font-face{
+    font-family: sci-fi2;
+    src: url(assets/font2.otf);
+}
+body{
+    background: url(assets/bg.jpg);
+    width: 100%;
+    background-size: 100% 200%;;
+}
+h1{
+    font-family: sci-fi;
+    letter-spacing: 4px;
+    color:black;
+}
+.calculator {
+    background-color: rgb(169, 169, 169);
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: black 2px 2px 10px;
+}
+#waste{
+    background: transparent;
+}
+input{
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(122, 122, 122);
+}
+
+.buttons {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    font-family: sci-fi2;
+    padding: 10px;
+    font-size: 20px;
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    box-shadow: black 2px 2px 10px;
+}
+
+.button:hover {
+    background-color: rgb(79, 78, 78);
+}
+#AC
+{
+    background-color: rgb(213, 49, 49);
+    border: 2px solid;
+}
+
+@media only screen and (max-width:600px){
+    .calculator{
+        width: 250px;
+    }
+}
